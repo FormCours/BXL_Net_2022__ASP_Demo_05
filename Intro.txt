@@ -1,0 +1,22 @@
+Hash
+****
+Objectif => Générer une empreinte d'un pwd
+• Exemple : 
+  MDP  : Test1234=
+  Hash : 7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9069
+
+Amélioration du hashage
+***********************
+• Salt   : Ajout d'une donnée unique pour un hash
+• Pepper : Ajout d'une donnée (commun a tout l'application)
+
+→ Le plus souvent rencontrer "La Salt"
+
+Mise en place
+*************
+• A la main -> Vous utilisez, par exemple, la classe "HashAlgorithm" pour faire la procedure
+
+• Utilisation de fonction de hashage :
+   - BCrypt
+   - Argon2i
+   - ...
